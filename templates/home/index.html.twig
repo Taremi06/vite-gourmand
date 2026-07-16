@@ -1,0 +1,9 @@
+<h1>{{titre}}</h1>
+<p>{{description}}</p>
+<ul>
+    {% for menu in menus%}
+        <li>{{ menu }}</li>
+    {%else%}
+        <li>Aucun menu disponible</li>
+    {%endfor%}
+</ul>
